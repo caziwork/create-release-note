@@ -54,10 +54,7 @@ module.exports = require("os");
 /***/ (function(__unusedmodule, __unusedexports, __webpack_require__) {
 
 const core = __webpack_require__(470);
-const wait = __webpack_require__(136);
 
-
-// most @actions toolkit packages have async methods
 async function run() {
   try {
     console.log(core.getInput('github-token'))
@@ -68,14 +65,6 @@ async function run() {
 }
 
 run()
-
-
-/***/ }),
-
-/***/ 136:
-/***/ (function() {
-
-eval("require")("./wait");
 
 
 /***/ }),
