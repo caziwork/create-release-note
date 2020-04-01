@@ -1,13 +1,15 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'create release note'
+description: 'this action collect issues by tag name and create release note.'
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  github-token:
+    description: 'GITHUB_TOKEN'
     required: true
-    default: '1000'
-outputs:
-  time: # output will be available to future steps 
-    description: 'The message to output'
+  tag:
+    description: 'target tag'
+    required: false
 runs:
   using: 'node12'
   main: 'dist/index.js'
+branding:
+  icon: 'file-text'
+  color: 'gray-dark'
