@@ -15,11 +15,3 @@ jobs:
     - run: npm ci
     - run: npm run lint
 
-  # test action works running from the graph  
-  test:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - uses: ./
-      with:
-        milliseconds: 1000
