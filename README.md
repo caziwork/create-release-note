@@ -13,7 +13,7 @@ jobs:
   job-name:
     runs-on: ubuntu-latest
     steps:
-    - uses: mougenko/create-release-note@v1.0.0
+    - uses: caziwork/create-release-note@v1.0.0
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
 ```
